@@ -1,0 +1,31 @@
+myBill = float(input("What was the bill?: "))
+tip = int(input("What % of tip will be added to the bill total?"))
+if tip == 15 :
+  print("A 15% tip")
+  tip1 = 15 / 100
+  tip1T = tip1 * myBill + myBill 
+  numOfPeople = int(input("How many people?: "))
+  answer = tip1T / numOfPeople
+  answer = round(answer, 2)
+  print("You all owe", answer)
+elif tip == 18 :
+  print("An 18% tip")
+  tip2 = 18 / 100
+  tip2T = tip2 * myBill + myBill 
+  numOfPeople = int(input("How many people?: "))
+  answer = tip2T / numOfPeople
+  answer = round(answer, 2)
+  print("You all owe", answer)
+elif tip == 20 :
+  print("A 20% tip")
+  tip3 = 20 / 100
+  tip3T = tip3 * myBill + myBill 
+  numOfPeople = int(input("How many people?: "))
+  answer = tip3T / numOfPeople
+  answer = round(answer, 2)
+  print("You all owe", answer)
+else:
+  print("A different tip?")
+  numOfPeople = int(input("How many people?: "))
+  answer = myBill / numOfPeople
+  print("You owe me", answer)
